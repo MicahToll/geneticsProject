@@ -1,0 +1,29 @@
+<html>
+<header>
+    <meta charset="utf-8">
+    <title>Genetics Project</title>
+    <script src="genetics.js"></script>
+    <script src="js/pixi.min.js"></script>
+    <!--  open anaconda prompt          -->
+    <!--  navigate to the geneticsProject folder on you device.          -->
+    <!--  type, "python -m http.server"          -->
+    <!--  You should be able to find your page at, "http://localhost:8000/"          -->
+</header>
+	
+<body>
+	<button onclick="input()">
+		input
+	</button>
+	<div id="output">
+		output
+    </div>
+    <script type="text/javascript">
+        let type = "WebGL"
+        if(!PIXI.utils.isWebGLSupported()){
+          type = "canvas"
+        }
+    
+        PIXI.utils.sayHello(type)
+    </script>
+</body>
+</html>
